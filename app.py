@@ -3,10 +3,6 @@ from langchain_groq import ChatGroq
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate
 
-import os
-from dotenv import load_dotenv
-load_dotenv()
-
 models = ["qwen/qwen3-32b"]
 
 # Prompt template
