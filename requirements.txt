@@ -1,8 +1,10 @@
-streamlit
 langchain
+openai
 langchain-core
 langchain-community
-langchain-openai
-openai
-python-dotenv
+langchain-classic
+langchain-huggingface
+langchain-groq
 bs4
+streamlit
+langchain-openai
