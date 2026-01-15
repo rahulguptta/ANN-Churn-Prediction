@@ -13,11 +13,7 @@ os.environ["LANGCHAIN_TRACING_V2"]="true"
 os.environ["LANGCHAIN_PROJECT"]="Simple Q&A Chatboat"
 
 
-models = [
-    "meta-llama/llama-3.3-70b-versatile",
-    "meta-llama/llama-3.1-8b-instant",
-    "mixtral-8x7b-32768"
-]
+models = ["qwen/qwen3-32b"]
 
 # Prompt template
 prompt = ChatPromptTemplate.from_messages(
@@ -28,7 +24,6 @@ prompt = ChatPromptTemplate.from_messages(
 )
 
 def generate_response(question, api_key,llm,temperature,max_tokens):
-  api_key = api_key
   llm = ChatGroq(model = llm,
                  groq_api_key = api_key)
   output_parser = StrOutputParser()
