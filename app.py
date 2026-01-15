@@ -11,4 +11,3 @@ st.write('This is Streamlit running via Cloudflare Tunnel.')
 name = st.text_input('Your name')
 if name:
     st.success(f'Welcome, {name}!')
-""")
