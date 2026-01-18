@@ -24,10 +24,6 @@ def generate_response(question, api_key,llm,temperature,max_tokens):
 # Title of the app
 st.title("Simple Q&A Chatbots")
 
-## sidebar for settings
-st.sidebar.title("Settings")
-api_key = st.sidebar.text_input("key", type="password")
-
 # select the model
 engine = st.sidebar.selectbox("model", models)
 
