@@ -4,6 +4,7 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate
 
 models = ["qwen/qwen3-32b"]
+api_key = st.secrets["GROQ_API_KEY"]
 
 # Prompt template
 prompt = ChatPromptTemplate.from_messages(
